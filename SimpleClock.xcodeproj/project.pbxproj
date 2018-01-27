@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */; };
-		C3AD8D5D2014CF640026C1B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5C2014CF640026C1B7 /* ViewController.swift */; };
+		C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */; };
 		C3AD8D602014CF640026C1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D5E2014CF640026C1B7 /* Main.storyboard */; };
 		C3AD8D622014CF640026C1B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D612014CF640026C1B7 /* Assets.xcassets */; };
 		C3AD8D652014CF640026C1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D632014CF640026C1B7 /* LaunchScreen.storyboard */; };
 		C3AD8D702014CF640026C1B7 /* SimpleClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D6F2014CF640026C1B7 /* SimpleClockTests.swift */; };
 		C3AD8D7B2014CF640026C1B7 /* SimpleClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D7A2014CF640026C1B7 /* SimpleClockUITests.swift */; };
+		C3AD8D8A201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */; };
+		C3AD8D8C201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */; };
+		C3AD8D8E201A2C080026C1B7 /* Molot.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D8D201A2C080026C1B7 /* Molot.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		C3AD8D572014CF640026C1B7 /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3AD8D5C2014CF640026C1B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		C3AD8D5F2014CF640026C1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3AD8D612014CF640026C1B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3AD8D642014CF640026C1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		C3AD8D762014CF640026C1B7 /* SimpleClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD8D7A2014CF640026C1B7 /* SimpleClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleClockUITests.swift; sourceTree = "<group>"; };
 		C3AD8D7C2014CF640026C1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TomaSlab-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Qarmic_sans_Abridged.ttf; sourceTree = "<group>"; };
+		C3AD8D8D201A2C080026C1B7 /* Molot.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Molot.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,9 @@
 		C3AD8D592014CF640026C1B7 /* SimpleClock */ = {
 			isa = PBXGroup;
 			children = (
+				C3AD8D88201A2BE50026C1B7 /* font */,
 				C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */,
-				C3AD8D5C2014CF640026C1B7 /* ViewController.swift */,
+				C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */,
 				C3AD8D5E2014CF640026C1B7 /* Main.storyboard */,
 				C3AD8D612014CF640026C1B7 /* Assets.xcassets */,
 				C3AD8D632014CF640026C1B7 /* LaunchScreen.storyboard */,
@@ -125,6 +132,16 @@
 			path = SimpleClockUITests;
 			sourceTree = "<group>";
 		};
+		C3AD8D88201A2BE50026C1B7 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				C3AD8D8D201A2C080026C1B7 /* Molot.otf */,
+				C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */,
+				C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +152,7 @@
 				C3AD8D532014CF640026C1B7 /* Sources */,
 				C3AD8D542014CF640026C1B7 /* Frameworks */,
 				C3AD8D552014CF640026C1B7 /* Resources */,
+				C3AD8D8F201CCA470026C1B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,7 +252,10 @@
 			files = (
 				C3AD8D652014CF640026C1B7 /* LaunchScreen.storyboard in Resources */,
 				C3AD8D622014CF640026C1B7 /* Assets.xcassets in Resources */,
+				C3AD8D8C201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf in Resources */,
+				C3AD8D8E201A2C080026C1B7 /* Molot.otf in Resources */,
 				C3AD8D602014CF640026C1B7 /* Main.storyboard in Resources */,
+				C3AD8D8A201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +275,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3AD8D8F201CCA470026C1B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3AD8D532014CF640026C1B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3AD8D5D2014CF640026C1B7 /* ViewController.swift in Sources */,
+				C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */,
 				C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,15 @@
+# 1行あたりの文字数制限を300に変更
+# プロジェクト作成時のデフォルトコメントを除外するため
+line_length: 300
+
+# 追加したOSSライブラリは含めない
+excluded:
+- Pods/
+- Carthage/
+
+# 無効にするルール
+disabled_rules:
+- trailing_whitespace # 空行を許可
+- force_try # try!を許可
+- force_cast # as!を許可
+- type_name # TEST_STRやabcなどの変数名を許可
