@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2FEB7B19FF5193971BEBED /* Pods_SimpleClockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7344D88410AEE148C8A9D865 /* Pods_SimpleClockUITests.framework */; };
+		4C1ABD2FA738437F8E27280E /* Pods_SimpleClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4FFAFF81668ADEE8C38BE /* Pods_SimpleClock.framework */; };
+		B8676A4C0519EC4070D9B4FC /* Pods_SimpleClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757D9670033CD287B610FB5F /* Pods_SimpleClockTests.framework */; };
+		C3A89525201DB7BA0066C387 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A89524201DB7B90066C387 /* FontAwesome.otf */; };
 		C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */; };
 		C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */; };
 		C3AD8D602014CF640026C1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D5E2014CF640026C1B7 /* Main.storyboard */; };
@@ -17,6 +21,7 @@
 		C3AD8D8A201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */; };
 		C3AD8D8C201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */; };
 		C3AD8D8E201A2C080026C1B7 /* Molot.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D8D201A2C080026C1B7 /* Molot.otf */; };
+		C3AD8D91201DA8FC0026C1B7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D90201DA8FC0026C1B7 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34AB4F36EAED47AE67448F69 /* Pods-SimpleClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClock/Pods-SimpleClock.release.xcconfig"; sourceTree = "<group>"; };
+		4DE4FFAFF81668ADEE8C38BE /* Pods_SimpleClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		705F126081C673A357A67556 /* Pods-SimpleClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7344D88410AEE148C8A9D865 /* Pods_SimpleClockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleClockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		757D9670033CD287B610FB5F /* Pods_SimpleClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleClockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3919C5E11E95A98803DF763 /* Pods-SimpleClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClock/Pods-SimpleClock.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A89524201DB7B90066C387 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		C3AD8D572014CF640026C1B7 /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +65,10 @@
 		C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TomaSlab-ExtraLight.ttf"; sourceTree = "<group>"; };
 		C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Qarmic_sans_Abridged.ttf; sourceTree = "<group>"; };
 		C3AD8D8D201A2C080026C1B7 /* Molot.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Molot.otf; sourceTree = "<group>"; };
+		C3AD8D90201DA8FC0026C1B7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CE4A3FC0923AE160482E1A12 /* Pods-SimpleClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D110AB8B73184F9AAC61FE83 /* Pods-SimpleClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3E9CB47B4C752C1AD73A7DB /* Pods-SimpleClockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1ABD2FA738437F8E27280E /* Pods_SimpleClock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8676A4C0519EC4070D9B4FC /* Pods_SimpleClockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2FEB7B19FF5193971BEBED /* Pods_SimpleClockUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CF80245575BA0E074154149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3919C5E11E95A98803DF763 /* Pods-SimpleClock.debug.xcconfig */,
+				34AB4F36EAED47AE67448F69 /* Pods-SimpleClock.release.xcconfig */,
+				705F126081C673A357A67556 /* Pods-SimpleClockTests.debug.xcconfig */,
+				D110AB8B73184F9AAC61FE83 /* Pods-SimpleClockTests.release.xcconfig */,
+				CE4A3FC0923AE160482E1A12 /* Pods-SimpleClockUITests.debug.xcconfig */,
+				E3E9CB47B4C752C1AD73A7DB /* Pods-SimpleClockUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE378EAD880C9265F76CB7AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4FFAFF81668ADEE8C38BE /* Pods_SimpleClock.framework */,
+				757D9670033CD287B610FB5F /* Pods_SimpleClockTests.framework */,
+				7344D88410AEE148C8A9D865 /* Pods_SimpleClockUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3AD8D4E2014CF640026C1B7 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +129,8 @@
 				C3AD8D6E2014CF640026C1B7 /* SimpleClockTests */,
 				C3AD8D792014CF640026C1B7 /* SimpleClockUITests */,
 				C3AD8D582014CF640026C1B7 /* Products */,
+				5CF80245575BA0E074154149 /* Pods */,
+				AE378EAD880C9265F76CB7AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +150,7 @@
 				C3AD8D88201A2BE50026C1B7 /* font */,
 				C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */,
 				C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */,
+				C3AD8D90201DA8FC0026C1B7 /* SettingViewController.swift */,
 				C3AD8D5E2014CF640026C1B7 /* Main.storyboard */,
 				C3AD8D612014CF640026C1B7 /* Assets.xcassets */,
 				C3AD8D632014CF640026C1B7 /* LaunchScreen.storyboard */,
@@ -135,6 +180,7 @@
 		C3AD8D88201A2BE50026C1B7 /* font */ = {
 			isa = PBXGroup;
 			children = (
+				C3A89524201DB7B90066C387 /* FontAwesome.otf */,
 				C3AD8D8D201A2C080026C1B7 /* Molot.otf */,
 				C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */,
 				C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */,
@@ -149,10 +195,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3AD8D7F2014CF640026C1B7 /* Build configuration list for PBXNativeTarget "SimpleClock" */;
 			buildPhases = (
+				5BED608B3F2F11890047391F /* [CP] Check Pods Manifest.lock */,
 				C3AD8D532014CF640026C1B7 /* Sources */,
 				C3AD8D542014CF640026C1B7 /* Frameworks */,
 				C3AD8D552014CF640026C1B7 /* Resources */,
 				C3AD8D8F201CCA470026C1B7 /* ShellScript */,
+				48A790FF2DD4B8F5C0A4D887 /* [CP] Embed Pods Frameworks */,
+				42B763E26EF2279618F9EA71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3AD8D822014CF640026C1B7 /* Build configuration list for PBXNativeTarget "SimpleClockTests" */;
 			buildPhases = (
+				6B4E85E4F248869C8F0F21AC /* [CP] Check Pods Manifest.lock */,
 				C3AD8D672014CF640026C1B7 /* Sources */,
 				C3AD8D682014CF640026C1B7 /* Frameworks */,
 				C3AD8D692014CF640026C1B7 /* Resources */,
+				ABA197E2A12B955DBF73DAEA /* [CP] Embed Pods Frameworks */,
+				DB9F29CA45285F204BFAB6C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3AD8D852014CF640026C1B7 /* Build configuration list for PBXNativeTarget "SimpleClockUITests" */;
 			buildPhases = (
+				E362E767FB8A3C7E08367518 /* [CP] Check Pods Manifest.lock */,
 				C3AD8D722014CF640026C1B7 /* Sources */,
 				C3AD8D732014CF640026C1B7 /* Frameworks */,
 				C3AD8D742014CF640026C1B7 /* Resources */,
+				F2D60B6C4A9D286C38455CDB /* [CP] Embed Pods Frameworks */,
+				7F56EE517D1D8474EBC28BAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +266,7 @@
 				TargetAttributes = {
 					C3AD8D562014CF640026C1B7 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C3AD8D6A2014CF640026C1B7 = {
@@ -250,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A89525201DB7BA0066C387 /* FontAwesome.otf in Resources */,
 				C3AD8D652014CF640026C1B7 /* LaunchScreen.storyboard in Resources */,
 				C3AD8D622014CF640026C1B7 /* Assets.xcassets in Resources */,
 				C3AD8D8C201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf in Resources */,
@@ -276,6 +333,96 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		42B763E26EF2279618F9EA71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClock/Pods-SimpleClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A790FF2DD4B8F5C0A4D887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClock/Pods-SimpleClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BED608B3F2F11890047391F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4E85E4F248869C8F0F21AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F56EE517D1D8474EBC28BAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA197E2A12B955DBF73DAEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C3AD8D8F201CCA470026C1B7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +436,51 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		DB9F29CA45285F204BFAB6C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E362E767FB8A3C7E08367518 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D60B6C4A9D286C38455CDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -298,6 +490,7 @@
 			files = (
 				C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */,
 				C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */,
+				C3AD8D91201DA8FC0026C1B7 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,14 +654,17 @@
 		};
 		C3AD8D802014CF640026C1B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3919C5E11E95A98803DF763 /* Pods-SimpleClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM344973CE;
 				INFOPLIST_FILE = SimpleClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imaji.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,8 +672,10 @@
 		};
 		C3AD8D812014CF640026C1B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AB4F36EAED47AE67448F69 /* Pods-SimpleClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BM344973CE;
 				INFOPLIST_FILE = SimpleClock/Info.plist;
@@ -491,6 +689,7 @@
 		};
 		C3AD8D832014CF640026C1B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705F126081C673A357A67556 /* Pods-SimpleClockTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +707,7 @@
 		};
 		C3AD8D842014CF640026C1B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D110AB8B73184F9AAC61FE83 /* Pods-SimpleClockTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +725,7 @@
 		};
 		C3AD8D862014CF640026C1B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4A3FC0923AE160482E1A12 /* Pods-SimpleClockUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +742,7 @@
 		};
 		C3AD8D872014CF640026C1B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E9CB47B4C752C1AD73A7DB /* Pods-SimpleClockUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

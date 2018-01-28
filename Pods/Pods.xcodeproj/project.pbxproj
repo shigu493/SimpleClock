@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06834B6840D440797C454393E686700F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
+		1A034B28CB856685D90B72C460259724 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = D004968535ECFB94A738EB291EDD2D88 /* FAKFoundationIcons.m */; };
+		1B3B6C651E62B843EFEE4CF68345702C /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9029C37C49E056FA8D0B5E5A1A8CA6 /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		307114C08782ECC6663AAC22DBBA0617 /* Pods-SimpleClock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF238A25AA408A353E64E32A6687E59 /* Pods-SimpleClock-dummy.m */; };
+		3EFADBE2F4B5A1F895449AD1D50272D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		44055668865B228F7C215CC0C32792E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
+		4B388B9EA4CF895C436678D85E104662 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCFDD2307310B018C64E6E99F8A8671 /* FAKIonIcons.m */; };
+		4C725C70C2B37B685D2D53B33E3BEA70 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CD3AC7F01C217528E9ECE9B4405D41 /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6E06517408173CE0A169CDAD4F2B4B /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3F86521930F6EB1AE6875F5183681F /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		587E8152FD74EEDC35155EEF465483E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		5B3F5F456AA78379F841456D3FA82A65 /* Pods-SimpleClockTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D99B2058F6B7CFA63CDB1612E7542 /* Pods-SimpleClockTests-dummy.m */; };
+		63C15C1A0F95B1DD8BD101081A3CFFC6 /* Pods-SimpleClock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5408C43D1EA1B8F9E2D193518FC0CDA /* Pods-SimpleClock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		653AD94054D60C00E59C27A0F487F6CD /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7AFD482573C41230F622CD6D5C4336 /* FAKIcon.m */; };
+		7119E59D9F44CCD0BF7543128ACE9CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		7CD6B140CD16F176303BFF5D3D7F96B8 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4626FCBB0168E3243C9D24A190D56089 /* FAKFontAwesome.m */; };
+		7F75373CD806B356590AA64A4C270CD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		82B174B32DDC49BA8A4642EBB891D5F0 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 348D9899C488F42FFA76E76CACE5CFDD /* foundation-icons.ttf */; };
+		8545C1F871A8AA469D6051FC0A055023 /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEEF080EEE770242D282A426AA49A0D /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A49E7A97B2B5C62E74D2B148F08697F /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 782020E831E6E4DC207949E494D3D565 /* FAKZocial.m */; };
+		A0296DBA1FEE567D5F0DAEE479424691 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 173C5F5F82175DBBD63F16A31A50F3C9 /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A341D77034CF2081BC45975B0EA5C2B8 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832585F8BBCEC2ADDFEA40259182113F /* ionicons.ttf */; };
+		A6B672CA8A1B01535BC1E4F6664798AA /* FontAwesomeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2A80CA854E52192F79C5CC5E596F3B /* FontAwesomeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA47371D095A154C1DC8126C60F9B172 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C588EDFEB84C0F46E259AF0517FEAEB /* zocial-regular-webfont.ttf */; };
+		D48CE7D3FB63E4B826C4CFFBE59AA95C /* Pods-SimpleClockTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA4D129AC19371E241F78F58E4C95A3 /* Pods-SimpleClockTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB7B6300A4E5D887582F2AAEDFE3A46C /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6F471A46B7F8E69FD93C06AA48051 /* FontAwesomeKit-dummy.m */; };
+		DEB2386D324E337EC0095906317DE3CF /* Pods-SimpleClockUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67117ECCBB7FA28DD7EEF2D50A5880B /* Pods-SimpleClockUITests-dummy.m */; };
+		ED7B1612CD641F0E4E97A9F8D3E17831 /* Pods-SimpleClockUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33297B06C6868E31A8E6082F29B0356F /* Pods-SimpleClockUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFFA10140E710F9CFBCAF07D2949BEB2 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C8F17AC572905C43A9EDC40D9C9C0C /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE38EF9FC737FF2C60228E0F0638A15E /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B87BB18FC41140CF9A78D48A09A4258 /* FontAwesome.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AA098ECC56487F3DD83A2BCDC516867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E69ACF683E93BAA1D3A912588C82BBE;
+			remoteInfo = FontAwesomeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C59A04046030EFE4EB3282F163E370 /* Pods-SimpleClockUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClockUITests-resources.sh"; sourceTree = "<group>"; };
+		07CD3AC7F01C217528E9ECE9B4405D41 /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
+		0B68A4F33E11925A98C06E374C510B47 /* Pods-SimpleClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C588EDFEB84C0F46E259AF0517FEAEB /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "zocial-regular-webfont.ttf"; path = "FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		0D1D99B2058F6B7CFA63CDB1612E7542 /* Pods-SimpleClockTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleClockTests-dummy.m"; sourceTree = "<group>"; };
+		0D25CA94F4749F0FC018F93A4C75CF7A /* Pods-SimpleClockTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClockTests-frameworks.sh"; sourceTree = "<group>"; };
+		13C8F17AC572905C43A9EDC40D9C9C0C /* FAKFoundationIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFoundationIcons.h; path = FontAwesomeKit/FAKFoundationIcons.h; sourceTree = "<group>"; };
+		13D734C281380371106F1E81F285F5F4 /* Pods-SimpleClockTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleClockTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		173C5F5F82175DBBD63F16A31A50F3C9 /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
+		1F2A0CE87E4FED50B473D309D00B95AF /* FontAwesomeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-prefix.pch"; sourceTree = "<group>"; };
+		269E786376D44097F7EA78407DE7F392 /* Pods_SimpleClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleClock.framework; path = "Pods-SimpleClock.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C748D846D6534EC6AEA637FF222B197 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33297B06C6868E31A8E6082F29B0356F /* Pods-SimpleClockUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleClockUITests-umbrella.h"; sourceTree = "<group>"; };
+		348D9899C488F42FFA76E76CACE5CFDD /* foundation-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "foundation-icons.ttf"; path = "FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		3A4B865E0B049D4D4136DF39E10F3111 /* Pods-SimpleClockUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleClockUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		431F34CE01DCBD5952D2786C5A0FA365 /* Pods-SimpleClockTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClockTests-resources.sh"; sourceTree = "<group>"; };
+		451F78A9B16BED0920245A1D87D5DFAD /* Pods_SimpleClockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleClockUITests.framework; path = "Pods-SimpleClockUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4626FCBB0168E3243C9D24A190D56089 /* FAKFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
+		4DB00C65AEEEDC0BD13D4B4357574FC1 /* Pods_SimpleClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleClockTests.framework; path = "Pods-SimpleClockTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5262B8B7FDDE93FBA64F0063315F687A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6555983ECF5DDA61FE28F2865486D478 /* Pods-SimpleClock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClock-resources.sh"; sourceTree = "<group>"; };
+		6787C23533BA26BF730A6C5474D3A9C6 /* Pods-SimpleClockTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SimpleClockTests.modulemap"; sourceTree = "<group>"; };
+		685B26F019F5D48252ABA539D23D8A47 /* FontAwesomeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FontAwesomeKit.modulemap; sourceTree = "<group>"; };
+		6B9959E03865EEE9A34009DAC11B0F81 /* Pods-SimpleClockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClockUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F0F10C9838DC04BF6EDA25354BBEF48 /* Pods-SimpleClock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleClock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		782020E831E6E4DC207949E494D3D565 /* FAKZocial.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKZocial.m; path = FontAwesomeKit/FAKZocial.m; sourceTree = "<group>"; };
+		7D66687979CF2602C253CBDC464A5365 /* FontAwesomeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesomeKit.framework; path = FontAwesomeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9029C37C49E056FA8D0B5E5A1A8CA6 /* FAKFontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFontAwesome.h; path = FontAwesomeKit/FAKFontAwesome.h; sourceTree = "<group>"; };
+		80052717D351F4DF35DCD18F42E45C6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832585F8BBCEC2ADDFEA40259182113F /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		8AD23616A9BCE05473C9FDE438A45D2F /* Pods-SimpleClock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SimpleClock.modulemap"; sourceTree = "<group>"; };
+		8ECBAE155488A0340EAB8E7AAA509B98 /* Pods-SimpleClockUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClockUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8F3F86521930F6EB1AE6875F5183681F /* FontAwesomeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeKit.h; path = FontAwesomeKit/FontAwesomeKit.h; sourceTree = "<group>"; };
+		9399F712764E3D527296B46B356D97D5 /* Pods-SimpleClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B87BB18FC41140CF9A78D48A09A4258 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		A3FD9148D0739F8625F95E836210D4F9 /* Pods-SimpleClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5408C43D1EA1B8F9E2D193518FC0CDA /* Pods-SimpleClock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleClock-umbrella.h"; sourceTree = "<group>"; };
+		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A7F8D47DA7733F575BA588C64590EBA6 /* Pods-SimpleClockUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleClockUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B37BF632DC28FAFA3734DB44B314D6CD /* Pods-SimpleClock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleClock-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE7AFD482573C41230F622CD6D5C4336 /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
+		C54BD90F006D7BD93930828BD85E222F /* Pods-SimpleClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClock.release.xcconfig"; sourceTree = "<group>"; };
+		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		C67117ECCBB7FA28DD7EEF2D50A5880B /* Pods-SimpleClockUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleClockUITests-dummy.m"; sourceTree = "<group>"; };
+		CAFE49F52F4EA8AA9CA6FDF60701B3AE /* Pods-SimpleClockTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleClockTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCF238A25AA408A353E64E32A6687E59 /* Pods-SimpleClock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleClock-dummy.m"; sourceTree = "<group>"; };
+		CF0E6D1C8FC5C601A33F8ACF78827BDB /* Pods-SimpleClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleClock.debug.xcconfig"; sourceTree = "<group>"; };
+		D004968535ECFB94A738EB291EDD2D88 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFoundationIcons.m; path = FontAwesomeKit/FAKFoundationIcons.m; sourceTree = "<group>"; };
+		D8D6F471A46B7F8E69FD93C06AA48051 /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
+		DBA4D129AC19371E241F78F58E4C95A3 /* Pods-SimpleClockTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleClockTests-umbrella.h"; sourceTree = "<group>"; };
+		E953A2203AE8FE88A448EBC64C23E5C0 /* Pods-SimpleClock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleClock-frameworks.sh"; sourceTree = "<group>"; };
+		EBEEF080EEE770242D282A426AA49A0D /* FAKZocial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKZocial.h; path = FontAwesomeKit/FAKZocial.h; sourceTree = "<group>"; };
+		EC2A80CA854E52192F79C5CC5E596F3B /* FontAwesomeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-umbrella.h"; sourceTree = "<group>"; };
+		EE64D67730295883E992D58D6216C96D /* FontAwesomeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeKit.xcconfig; sourceTree = "<group>"; };
+		F37515BC54746FAD2454E8FD2F4B9EE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5E5C54296A5B3B0DE8CB91B9E1F0FD /* Pods-SimpleClockUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SimpleClockUITests.modulemap"; sourceTree = "<group>"; };
+		FFCFDD2307310B018C64E6E99F8A8671 /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002D42A20D1D448FD85E7646F195BE71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06834B6840D440797C454393E686700F /* CoreText.framework in Frameworks */,
+				7119E59D9F44CCD0BF7543128ACE9CAB /* Foundation.framework in Frameworks */,
+				44055668865B228F7C215CC0C32792E5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		007779DD0ED4F20285216BCFC0F67895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EFADBE2F4B5A1F895449AD1D50272D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FA722D990F915CA22FE5F146835ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F75373CD806B356590AA64A4C270CD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73477BB8EC8D206FBAB5664DE3BEA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587E8152FD74EEDC35155EEF465483E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF1CA95E532A8F990E19506982FA04EE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1589228300985958601859BEF09F14D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C588EDFEB84C0F46E259AF0517FEAEB /* zocial-regular-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D0508A1D6FCFF81008E93D7B12FB3CF /* IonIcons */ = {
+			isa = PBXGroup;
+			children = (
+				173C5F5F82175DBBD63F16A31A50F3C9 /* FAKIonIcons.h */,
+				FFCFDD2307310B018C64E6E99F8A8671 /* FAKIonIcons.m */,
+				9D08F4BD8511737564CD04D163AFBC99 /* Resources */,
+			);
+			name = IonIcons;
+			sourceTree = "<group>";
+		};
+		231C7D4898106D08C13D4D7DCA2C898B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B87BB18FC41140CF9A78D48A09A4258 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2DEB40EFC6B33FC581818C438F7FB49E /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8F3F86521930F6EB1AE6875F5183681F /* FontAwesomeKit.h */,
+				74055A6E45060562757C9281617BB429 /* Core */,
+				491A0C7BB7D0C35A38ADC15A7D1712B0 /* FontAwesome */,
+				CC5A2803E0C2003CA3BAFF927DB9143B /* FoundationIcons */,
+				1D0508A1D6FCFF81008E93D7B12FB3CF /* IonIcons */,
+				637D9C04527AF65B5B73A278A5A252E6 /* Support Files */,
+				DD574FC726AFB6CFF2FFB63F328CAB9D /* Zocial */,
+			);
+			name = FontAwesomeKit;
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+		491A0C7BB7D0C35A38ADC15A7D1712B0 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				7E9029C37C49E056FA8D0B5E5A1A8CA6 /* FAKFontAwesome.h */,
+				4626FCBB0168E3243C9D24A190D56089 /* FAKFontAwesome.m */,
+				231C7D4898106D08C13D4D7DCA2C898B /* Resources */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		56C96C1E5A3F511342C21BB2DEDC5AA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DEB40EFC6B33FC581818C438F7FB49E /* FontAwesomeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		637D9C04527AF65B5B73A278A5A252E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				685B26F019F5D48252ABA539D23D8A47 /* FontAwesomeKit.modulemap */,
+				EE64D67730295883E992D58D6216C96D /* FontAwesomeKit.xcconfig */,
+				D8D6F471A46B7F8E69FD93C06AA48051 /* FontAwesomeKit-dummy.m */,
+				1F2A0CE87E4FED50B473D309D00B95AF /* FontAwesomeKit-prefix.pch */,
+				EC2A80CA854E52192F79C5CC5E596F3B /* FontAwesomeKit-umbrella.h */,
+				5262B8B7FDDE93FBA64F0063315F687A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesomeKit";
+			sourceTree = "<group>";
+		};
+		74055A6E45060562757C9281617BB429 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07CD3AC7F01C217528E9ECE9B4405D41 /* FAKIcon.h */,
+				BE7AFD482573C41230F622CD6D5C4336 /* FAKIcon.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				56C96C1E5A3F511342C21BB2DEDC5AA4 /* Pods */,
+				EAD57121156BB7EB5E29AA8449C1B07F /* Products */,
+				ED72F7D123D447B9CC3338F07C5D4A59 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5D83B0469A2D18AD3F69003BCCF7C0 /* Pods-SimpleClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C748D846D6534EC6AEA637FF222B197 /* Info.plist */,
+				6787C23533BA26BF730A6C5474D3A9C6 /* Pods-SimpleClockTests.modulemap */,
+				CAFE49F52F4EA8AA9CA6FDF60701B3AE /* Pods-SimpleClockTests-acknowledgements.markdown */,
+				13D734C281380371106F1E81F285F5F4 /* Pods-SimpleClockTests-acknowledgements.plist */,
+				0D1D99B2058F6B7CFA63CDB1612E7542 /* Pods-SimpleClockTests-dummy.m */,
+				0D25CA94F4749F0FC018F93A4C75CF7A /* Pods-SimpleClockTests-frameworks.sh */,
+				431F34CE01DCBD5952D2786C5A0FA365 /* Pods-SimpleClockTests-resources.sh */,
+				DBA4D129AC19371E241F78F58E4C95A3 /* Pods-SimpleClockTests-umbrella.h */,
+				0B68A4F33E11925A98C06E374C510B47 /* Pods-SimpleClockTests.debug.xcconfig */,
+				9399F712764E3D527296B46B356D97D5 /* Pods-SimpleClockTests.release.xcconfig */,
+			);
+			name = "Pods-SimpleClockTests";
+			path = "Target Support Files/Pods-SimpleClockTests";
+			sourceTree = "<group>";
+		};
+		93FAA6AD0D62DBC3FF7930989327D1D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				348D9899C488F42FFA76E76CACE5CFDD /* foundation-icons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D08F4BD8511737564CD04D163AFBC99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				832585F8BBCEC2ADDFEA40259182113F /* ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BF064FE6EA6369E2E38E9ABD10B4AEFF /* Pods-SimpleClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F37515BC54746FAD2454E8FD2F4B9EE7 /* Info.plist */,
+				FC5E5C54296A5B3B0DE8CB91B9E1F0FD /* Pods-SimpleClockUITests.modulemap */,
+				3A4B865E0B049D4D4136DF39E10F3111 /* Pods-SimpleClockUITests-acknowledgements.markdown */,
+				A7F8D47DA7733F575BA588C64590EBA6 /* Pods-SimpleClockUITests-acknowledgements.plist */,
+				C67117ECCBB7FA28DD7EEF2D50A5880B /* Pods-SimpleClockUITests-dummy.m */,
+				8ECBAE155488A0340EAB8E7AAA509B98 /* Pods-SimpleClockUITests-frameworks.sh */,
+				07C59A04046030EFE4EB3282F163E370 /* Pods-SimpleClockUITests-resources.sh */,
+				33297B06C6868E31A8E6082F29B0356F /* Pods-SimpleClockUITests-umbrella.h */,
+				A3FD9148D0739F8625F95E836210D4F9 /* Pods-SimpleClockUITests.debug.xcconfig */,
+				6B9959E03865EEE9A34009DAC11B0F81 /* Pods-SimpleClockUITests.release.xcconfig */,
+			);
+			name = "Pods-SimpleClockUITests";
+			path = "Target Support Files/Pods-SimpleClockUITests";
+			sourceTree = "<group>";
+		};
+		CC5A2803E0C2003CA3BAFF927DB9143B /* FoundationIcons */ = {
+			isa = PBXGroup;
+			children = (
+				13C8F17AC572905C43A9EDC40D9C9C0C /* FAKFoundationIcons.h */,
+				D004968535ECFB94A738EB291EDD2D88 /* FAKFoundationIcons.m */,
+				93FAA6AD0D62DBC3FF7930989327D1D2 /* Resources */,
+			);
+			name = FoundationIcons;
+			sourceTree = "<group>";
+		};
+		DD574FC726AFB6CFF2FFB63F328CAB9D /* Zocial */ = {
+			isa = PBXGroup;
+			children = (
+				EBEEF080EEE770242D282A426AA49A0D /* FAKZocial.h */,
+				782020E831E6E4DC207949E494D3D565 /* FAKZocial.m */,
+				1589228300985958601859BEF09F14D0 /* Resources */,
+			);
+			name = Zocial;
+			sourceTree = "<group>";
+		};
+		DF6A0A2A54785A86A172F6A3FEBAA327 /* Pods-SimpleClock */ = {
+			isa = PBXGroup;
+			children = (
+				80052717D351F4DF35DCD18F42E45C6E /* Info.plist */,
+				8AD23616A9BCE05473C9FDE438A45D2F /* Pods-SimpleClock.modulemap */,
+				6F0F10C9838DC04BF6EDA25354BBEF48 /* Pods-SimpleClock-acknowledgements.markdown */,
+				B37BF632DC28FAFA3734DB44B314D6CD /* Pods-SimpleClock-acknowledgements.plist */,
+				CCF238A25AA408A353E64E32A6687E59 /* Pods-SimpleClock-dummy.m */,
+				E953A2203AE8FE88A448EBC64C23E5C0 /* Pods-SimpleClock-frameworks.sh */,
+				6555983ECF5DDA61FE28F2865486D478 /* Pods-SimpleClock-resources.sh */,
+				A5408C43D1EA1B8F9E2D193518FC0CDA /* Pods-SimpleClock-umbrella.h */,
+				CF0E6D1C8FC5C601A33F8ACF78827BDB /* Pods-SimpleClock.debug.xcconfig */,
+				C54BD90F006D7BD93930828BD85E222F /* Pods-SimpleClock.release.xcconfig */,
+			);
+			name = "Pods-SimpleClock";
+			path = "Target Support Files/Pods-SimpleClock";
+			sourceTree = "<group>";
+		};
+		EAD57121156BB7EB5E29AA8449C1B07F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D66687979CF2602C253CBDC464A5365 /* FontAwesomeKit.framework */,
+				269E786376D44097F7EA78407DE7F392 /* Pods_SimpleClock.framework */,
+				4DB00C65AEEEDC0BD13D4B4357574FC1 /* Pods_SimpleClockTests.framework */,
+				451F78A9B16BED0920245A1D87D5DFAD /* Pods_SimpleClockUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED72F7D123D447B9CC3338F07C5D4A59 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF6A0A2A54785A86A172F6A3FEBAA327 /* Pods-SimpleClock */,
+				7E5D83B0469A2D18AD3F69003BCCF7C0 /* Pods-SimpleClockTests */,
+				BF064FE6EA6369E2E38E9ABD10B4AEFF /* Pods-SimpleClockUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FF1CA95E532A8F990E19506982FA04EE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */,
+				A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */,
+				27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06114D29F026DAC5DB2DB40014B545CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7B1612CD641F0E4E97A9F8D3E17831 /* Pods-SimpleClockUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B3B3D9E7E567CA07DA9D30DBDDB7022 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48CE7D3FB63E4B826C4CFFBE59AA95C /* Pods-SimpleClockTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2851371D556889D1F39DE8B0F4B11339 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C15C1A0F95B1DD8BD101081A3CFFC6 /* Pods-SimpleClock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9482EC774E060ADCD42DEBE3377A13A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3B6C651E62B843EFEE4CF68345702C /* FAKFontAwesome.h in Headers */,
+				EFFA10140E710F9CFBCAF07D2949BEB2 /* FAKFoundationIcons.h in Headers */,
+				4C725C70C2B37B685D2D53B33E3BEA70 /* FAKIcon.h in Headers */,
+				A0296DBA1FEE567D5F0DAEE479424691 /* FAKIonIcons.h in Headers */,
+				8545C1F871A8AA469D6051FC0A055023 /* FAKZocial.h in Headers */,
+				A6B672CA8A1B01535BC1E4F6664798AA /* FontAwesomeKit-umbrella.h in Headers */,
+				4D6E06517408173CE0A169CDAD4F2B4B /* FontAwesomeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E69ACF683E93BAA1D3A912588C82BBE /* FontAwesomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FDBC883AF3C4B25B11865304D4FA26 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
+			buildPhases = (
+				FB451B2BB852C730B4FFB8B07A0404EA /* Sources */,
+				002D42A20D1D448FD85E7646F195BE71 /* Frameworks */,
+				9482EC774E060ADCD42DEBE3377A13A8 /* Headers */,
+				5738AD09ED08D7C2E2C15A3F77731E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontAwesomeKit;
+			productName = FontAwesomeKit;
+			productReference = 7D66687979CF2602C253CBDC464A5365 /* FontAwesomeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98333638E2814B9AE3BA99BF479E22D4 /* Pods-SimpleClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF9E393EE7502D372E77391F4B8D411 /* Build configuration list for PBXNativeTarget "Pods-SimpleClock" */;
+			buildPhases = (
+				2EDE66DF45590F0272733437C39A67B8 /* Sources */,
+				C73477BB8EC8D206FBAB5664DE3BEA3C /* Frameworks */,
+				2851371D556889D1F39DE8B0F4B11339 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E34A0B94012568BE93A5E0B5CFAE8B /* PBXTargetDependency */,
+			);
+			name = "Pods-SimpleClock";
+			productName = "Pods-SimpleClock";
+			productReference = 269E786376D44097F7EA78407DE7F392 /* Pods_SimpleClock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5D9C8D0E2E1B90274A2CD8C57FF12FE /* Pods-SimpleClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B79C1373F79A902C83818454993CC06 /* Build configuration list for PBXNativeTarget "Pods-SimpleClockTests" */;
+			buildPhases = (
+				970F666412BEC5FA124E65515C3A8AA0 /* Sources */,
+				007779DD0ED4F20285216BCFC0F67895 /* Frameworks */,
+				1B3B3D9E7E567CA07DA9D30DBDDB7022 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SimpleClockTests";
+			productName = "Pods-SimpleClockTests";
+			productReference = 4DB00C65AEEEDC0BD13D4B4357574FC1 /* Pods_SimpleClockTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF7F8DE15145F16A9B2A56EB531C6CE6 /* Pods-SimpleClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63A9DACFC1EFA590848B07549DB75C5 /* Build configuration list for PBXNativeTarget "Pods-SimpleClockUITests" */;
+			buildPhases = (
+				1C807DB723B48ABE680106AC5CC10CCF /* Sources */,
+				23FA722D990F915CA22FE5F146835ABF /* Frameworks */,
+				06114D29F026DAC5DB2DB40014B545CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SimpleClockUITests";
+			productName = "Pods-SimpleClockUITests";
+			productReference = 451F78A9B16BED0920245A1D87D5DFAD /* Pods_SimpleClockUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EAD57121156BB7EB5E29AA8449C1B07F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E69ACF683E93BAA1D3A912588C82BBE /* FontAwesomeKit */,
+				98333638E2814B9AE3BA99BF479E22D4 /* Pods-SimpleClock */,
+				D5D9C8D0E2E1B90274A2CD8C57FF12FE /* Pods-SimpleClockTests */,
+				EF7F8DE15145F16A9B2A56EB531C6CE6 /* Pods-SimpleClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5738AD09ED08D7C2E2C15A3F77731E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE38EF9FC737FF2C60228E0F0638A15E /* FontAwesome.otf in Resources */,
+				82B174B32DDC49BA8A4642EBB891D5F0 /* foundation-icons.ttf in Resources */,
+				A341D77034CF2081BC45975B0EA5C2B8 /* ionicons.ttf in Resources */,
+				AA47371D095A154C1DC8126C60F9B172 /* zocial-regular-webfont.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C807DB723B48ABE680106AC5CC10CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB2386D324E337EC0095906317DE3CF /* Pods-SimpleClockUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EDE66DF45590F0272733437C39A67B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307114C08782ECC6663AAC22DBBA0617 /* Pods-SimpleClock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970F666412BEC5FA124E65515C3A8AA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3F5F456AA78379F841456D3FA82A65 /* Pods-SimpleClockTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB451B2BB852C730B4FFB8B07A0404EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD6B140CD16F176303BFF5D3D7F96B8 /* FAKFontAwesome.m in Sources */,
+				1A034B28CB856685D90B72C460259724 /* FAKFoundationIcons.m in Sources */,
+				653AD94054D60C00E59C27A0F487F6CD /* FAKIcon.m in Sources */,
+				4B388B9EA4CF895C436678D85E104662 /* FAKIonIcons.m in Sources */,
+				8A49E7A97B2B5C62E74D2B148F08697F /* FAKZocial.m in Sources */,
+				DB7B6300A4E5D887582F2AAEDFE3A46C /* FontAwesomeKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E34A0B94012568BE93A5E0B5CFAE8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeKit;
+			target = 6E69ACF683E93BAA1D3A912588C82BBE /* FontAwesomeKit */;
+			targetProxy = 8AA098ECC56487F3DD83A2BCDC516867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		11732A86B67B648FA72DD97D60AD1794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B68A4F33E11925A98C06E374C510B47 /* Pods-SimpleClockTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClockTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClockTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EA5706DE9928B17C11D2FE31BEFBBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE64D67730295883E992D58D6216C96D /* FontAwesomeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontAwesomeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		363EF03CE6D935275D3D562A59F5568B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9959E03865EEE9A34009DAC11B0F81 /* Pods-SimpleClockUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClockUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClockUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39B44A122688AC73CF81982C03EF3DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FD9148D0739F8625F95E836210D4F9 /* Pods-SimpleClockUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClockUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClockUITests/Pods-SimpleClockUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClockUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F5D67759EB640A3EC9EFACC72F2D787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0E6D1C8FC5C601A33F8ACF78827BDB /* Pods-SimpleClock.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClock/Pods-SimpleClock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		475E2767E43916B213056D5F614AF325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9399F712764E3D527296B46B356D97D5 /* Pods-SimpleClockTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClockTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClockTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D97F4466C8BEB6AE7ECDF8686901C000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE64D67730295883E992D58D6216C96D /* FontAwesomeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesomeKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesomeKit/FontAwesomeKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesomeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E21D7A522876B4C6CB0CE7EFB8270EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54BD90F006D7BD93930828BD85E222F /* Pods-SimpleClock.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SimpleClock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SimpleClock/Pods-SimpleClock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SimpleClock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */,
+				ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B79C1373F79A902C83818454993CC06 /* Build configuration list for PBXNativeTarget "Pods-SimpleClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11732A86B67B648FA72DD97D60AD1794 /* Debug */,
+				475E2767E43916B213056D5F614AF325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF9E393EE7502D372E77391F4B8D411 /* Build configuration list for PBXNativeTarget "Pods-SimpleClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5D67759EB640A3EC9EFACC72F2D787 /* Debug */,
+				E21D7A522876B4C6CB0CE7EFB8270EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FDBC883AF3C4B25B11865304D4FA26 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97F4466C8BEB6AE7ECDF8686901C000 /* Debug */,
+				1EA5706DE9928B17C11D2FE31BEFBBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63A9DACFC1EFA590848B07549DB75C5 /* Build configuration list for PBXNativeTarget "Pods-SimpleClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B44A122688AC73CF81982C03EF3DA7 /* Debug */,
+				363EF03CE6D935275D3D562A59F5568B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

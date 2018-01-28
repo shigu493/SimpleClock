@@ -23,24 +23,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="23:55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heY-0K-55R">
-                                <rect key="frame" x="46" y="278" width="283" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heY-0K-55R">
+                                <rect key="frame" x="53" y="299" width="270" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="ADO-NA-5SP"/>
+                                    <constraint firstAttribute="width" constant="270" id="yfw-XE-cKa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkP-Hw-Zge">
+                                <rect key="frame" x="309" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="mej-z6-D1s"/>
+                                    <constraint firstAttribute="height" constant="50" id="nzn-Ty-2By"/>
+                                </constraints>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtnSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPy-gn-L5k"/>
+                                    <segue destination="jn6-ey-RCz" kind="presentation" identifier="ClockToSettingSegue" id="kP2-Dx-02y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kkP-Hw-Zge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="01G-6d-Jef"/>
+                            <constraint firstItem="heY-0K-55R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gef-a7-J75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkP-Hw-Zge" secondAttribute="trailing" constant="16" id="KoD-H4-F8g"/>
+                            <constraint firstItem="heY-0K-55R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVa-xN-4Dd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnSetting" destination="kkP-Hw-Zge" id="sfv-gv-vUJ"/>
                         <outlet property="lblTime" destination="heY-0K-55R" id="qGP-mw-DmV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="BXj-50-RQH">
+            <objects>
+                <viewController restorationIdentifier="SettingViewController" storyboardIdentifier="SettingViewController" id="jn6-ey-RCz" customClass="SettingViewController" customModule="SimpleClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFd-0m-keG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-ak-ChA">
+                                <rect key="frame" x="309" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HpQ-6W-mB1"/>
+                                    <constraint firstAttribute="height" constant="50" id="eca-6k-6DW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="tapCloseBtn:" destination="jn6-ey-RCz" eventType="touchUpInside" id="X9W-wa-5eE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gYx-ak-ChA" firstAttribute="top" secondItem="nGb-yA-eEZ" secondAttribute="top" id="KnQ-Lm-6gJ"/>
+                            <constraint firstItem="nGb-yA-eEZ" firstAttribute="trailing" secondItem="gYx-ak-ChA" secondAttribute="trailing" constant="16" id="jiq-IW-qkc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nGb-yA-eEZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnClose" destination="gYx-ak-ChA" id="zrh-8z-V7i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdC-ct-dh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="133"/>
         </scene>
     </scenes>
 </document>

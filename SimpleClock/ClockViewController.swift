@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import FontAwesomeKit
 
 class ClockViewController: UIViewController {
     
     @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var btnSetting: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,10 @@ class ClockViewController: UIViewController {
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayClock), userInfo: nil, repeats: true)
         // 発火
         timer.fire()
+        
+        let settingIcon = FAKFontAwesome.cogIcon(withSize: 40)
+        btnSetting.titleLabel?.font = settingIcon?.iconFont()
+        btnSetting.setAttributedTitle(settingIcon?.attributedString(), for: .normal)
         
         lblTime.font = UIFont(name: "Toma Slab", size: 50)
     }
@@ -38,5 +44,16 @@ class ClockViewController: UIViewController {
         formatter.dateFormat = "HH:mm:ss"
         let displayTime = formatter.string(from: Date())    // Date()だけで現在時刻を表す
         lblTime.text = displayTime
+    }
+    
+    @IBAction func tapBtnSetting(_ sender: Any) {
+        performSegue(withIdentifier: "ClockToSettingSegue", sender: nil)
+
+    }
+    
+    // MARK: - delegate
+    // 編集用モーダルからの戻り
+    func returnFromSettingVC() {
+
     }
 }
