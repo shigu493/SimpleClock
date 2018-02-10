@@ -16,21 +16,24 @@ class ClockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         // タイマーをセット
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayClock), userInfo: nil, repeats: true)
         // 発火
         timer.fire()
         
+        self.view.backgroundColor = themeColor
+        
         let settingIcon = FAKFontAwesome.cogIcon(withSize: 40)
         btnSetting.titleLabel?.font = settingIcon?.iconFont()
+        btnSetting.titleLabel?.textColor = themeColorSub
         btnSetting.setAttributedTitle(settingIcon?.attributedString(), for: .normal)
         
         lblTime.font = UIFont(name: "Toma Slab", size: 50)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +50,7 @@ class ClockViewController: UIViewController {
     }
     
     @IBAction func tapBtnSetting(_ sender: Any) {
-        performSegue(withIdentifier: "ClockToSettingSegue", sender: nil)
+//        performSegue(withIdentifier: "ClockToSettingSegue", sender: nil)
 
     }
     
