@@ -13,11 +13,13 @@ var themeColor: UIColor = .black
 var themeColorSub: UIColor = .white
 
 class ColorManager {
-    func setThemeColor(color: UIColor) {
-        themeColor = color
-    }
-    
-    func setThemeColorSub(color: UIColor) {
-        themeColorSub = color
+    func setThemeColor(color: String) {
+        if color == "Black" {
+            themeColor = .black
+            themeColorSub = .white
+        } else if color == "White" {
+            themeColor = .white
+            themeColorSub = .black
+        }
     }
 }

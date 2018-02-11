@@ -15,7 +15,7 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tblSetting: UITableView!
     let settingsLabelArray: [String] = ["Color", "Font"]
     let settingsColorArray: [String] = ["White", "Black"]
-    let settingsFontArray: [String] = ["Toma Slab", "Molot", "CCCC"]
+    let settingsFontArray: [String] = ["Toma Slab", "Molot", "Qikki Reg"]
 
     var selectedItem: String = ""
     
@@ -26,21 +26,27 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.view.backgroundColor = themeColor
-        
         let closeIcon = FAKFontAwesome.closeIcon(withSize: 40)
-        btnClose.titleLabel?.textColor = themeColorSub
         btnClose.titleLabel?.font = closeIcon?.iconFont()
         btnClose.setAttributedTitle(closeIcon?.attributedString(), for: .normal)
         
         tblSetting.delegate = self
         tblSetting.dataSource = self
         
+        setColor()
+    }
+    
+    func setColor() {
+        self.view.backgroundColor = themeColor
+        btnClose.titleLabel?.textColor = themeColorSub
         tblSetting.reloadData()
     }
     
     // MARK: - UIButton
-    @IBAction func tapCloseBtn(_ sender: Any) {
+    /// 閉じるボタン押下
+    ///
+    /// - Parameter sender: UIButton
+    @IBAction func tapCloseBtn(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -50,42 +56,68 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44.0
+        return 85.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tblSetting.dequeueReusableCell(withIdentifier: "SettingCell",
-                                                  for: indexPath)
+                                                  for: indexPath) as! SettingCell
         cell.backgroundColor = .clear
-        
+
         // ラベル
-        cell.textLabel?.text = settingsLabelArray[indexPath.row]
-        cell.textLabel?.textColor = themeColorSub
+        cell.lblText.text = settingsLabelArray[indexPath.row]
+        cell.lblText.textColor = themeColorSub
         
+        // 値
+        if indexPath.row == 0 { // Color
+            cell.scValue.changeAllSegmentWithArray(arr: settingsColorArray, type: "Color")
+        } else if indexPath.row == 1 { // Font
+            cell.scValue.changeAllSegmentWithArray(arr: settingsFontArray, type: "Font")
+        }
+        cell.scValue.tag = indexPath.row
+        cell.scValue.tintColor = themeColorSub
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("タップされたよ")
-        selectedItem = settingsLabelArray[indexPath.row]
-        performSegue(withIdentifier: "SettingToDetail", sender: nil)
+    // MARK: - UISegmentedControl
+    /// SegmentedControlの値が変更されたときに呼ばれる
+    ///
+    /// - Parameter sender: UISegmentedControl
+    @IBAction func changeValue(_ sender: UISegmentedControl) {
+        switch sender.tag {
+        case 0: // Color
+            UserDefaults.standard.set(settingsColorArray[sender.selectedSegmentIndex], forKey: "Color")
+            ColorManager().setThemeColor(color: settingsColorArray[sender.selectedSegmentIndex])
+            setColor()
 
-    }
-    
-    // MARK: - Segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("selectedItem=" + selectedItem)
-        
-        if segue.identifier == "SettingToDetail" {
-            let settingDetailVC = segue.destination as! SettingDetailViewController
-            settingDetailVC.selectedItem = selectedItem
-            if selectedItem == "Color" {
-                settingDetailVC.dataArray = settingsColorArray
-            } else if selectedItem == "Font" {
-                settingDetailVC.dataArray = settingsFontArray
-            }
-            print(settingDetailVC.selectedItem)
+        case 1: // Font
+            UserDefaults.standard.set(settingsFontArray[sender.selectedSegmentIndex], forKey: "Font")
+            
+        default:
+            return
         }
     }
+}
+
+extension UISegmentedControl {
+    
+    /// SegmentedControlのすべての要素の入れ替え
+    ///
+    /// - Parameters:
+    ///   - arr: 要素の配列
+    ///   - type: 要素の種別
+    func changeAllSegmentWithArray(arr: [String], type: String) {
+        var defaultValue = 0
+        self.removeAllSegments()
+        for str in arr {
+            self.insertSegment(withTitle: str, at: self.numberOfSegments, animated: false)
+            if UserDefaults.standard.string(forKey: type) != nil
+                && str == UserDefaults.standard.string(forKey: type) {
+                defaultValue = self.numberOfSegments - 1
+            }
+        }
+        self.selectedSegmentIndex = defaultValue
+    }
+    
 }

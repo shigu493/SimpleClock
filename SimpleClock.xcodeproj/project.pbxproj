@@ -13,7 +13,7 @@
 		C3A89525201DB7BA0066C387 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A89524201DB7B90066C387 /* FontAwesome.otf */; };
 		C3A895292025704F0066C387 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A895282025704F0066C387 /* Constant.swift */; };
 		C3A8952B202573410066C387 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8952A202573410066C387 /* ColorManager.swift */; };
-		C3A8952F202EF1D80066C387 /* SettingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8952E202EF1D80066C387 /* SettingDetailViewController.swift */; };
+		C3A89533203094E60066C387 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A89532203094E60066C387 /* SettingCell.swift */; };
 		C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */; };
 		C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */; };
 		C3AD8D602014CF640026C1B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AD8D5E2014CF640026C1B7 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 		C3A89524201DB7B90066C387 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		C3A895282025704F0066C387 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C3A8952A202573410066C387 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
-		C3A8952E202EF1D80066C387 /* SettingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailViewController.swift; sourceTree = "<group>"; };
+		C3A89532203094E60066C387 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		C3AD8D572014CF640026C1B7 /* SimpleClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AD8D5A2014CF640026C1B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3AD8D5C2014CF640026C1B7 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				C3AD8D632014CF640026C1B7 /* LaunchScreen.storyboard */,
 				C3AD8D662014CF640026C1B7 /* Info.plist */,
 				C3A8952A202573410066C387 /* ColorManager.swift */,
-				C3A8952E202EF1D80066C387 /* SettingDetailViewController.swift */,
+				C3A89532203094E60066C387 /* SettingCell.swift */,
 			);
 			path = SimpleClock;
 			sourceTree = "<group>";
@@ -499,8 +499,8 @@
 			files = (
 				C3AD8D5D2014CF640026C1B7 /* ClockViewController.swift in Sources */,
 				C3AD8D5B2014CF640026C1B7 /* AppDelegate.swift in Sources */,
+				C3A89533203094E60066C387 /* SettingCell.swift in Sources */,
 				C3A895292025704F0066C387 /* Constant.swift in Sources */,
-				C3A8952F202EF1D80066C387 /* SettingDetailViewController.swift in Sources */,
 				C3A8952B202573410066C387 /* ColorManager.swift in Sources */,
 				C3AD8D91201DA8FC0026C1B7 /* SettingViewController.swift in Sources */,
 			);
