@@ -108,9 +108,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="S2H-RK-QCq" kind="showDetail" identifier="SettingToDetail" id="xfv-jR-4GN"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -129,6 +126,7 @@
                     <connections>
                         <outlet property="btnClose" destination="gYx-ak-ChA" id="zrh-8z-V7i"/>
                         <outlet property="tblSetting" destination="Pup-tc-MGb" id="Zmg-fW-9hb"/>
+                        <segue destination="S2H-RK-QCq" kind="showDetail" identifier="SettingToDetail" id="ij8-hY-9oa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdC-ct-dh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,15 +145,15 @@
                                 <rect key="frame" x="30" y="20" width="315" height="614"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SettingDetailCell" textLabel="InF-zn-xDI" style="IBUITableViewCellStyleDefault" id="Bft-Gz-6Jw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingDetailCell" textLabel="InF-zn-xDI" style="IBUITableViewCellStyleDefault" id="Bft-Gz-6Jw">
                                         <rect key="frame" x="0.0" y="28" width="315" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bft-Gz-6Jw" id="QW4-wx-faE">
-                                            <rect key="frame" x="0.0" y="0.0" width="276" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="InF-zn-xDI">
-                                                    <rect key="frame" x="15" y="0.0" width="261" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="285" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

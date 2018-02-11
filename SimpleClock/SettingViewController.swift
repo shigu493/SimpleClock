@@ -15,7 +15,7 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tblSetting: UITableView!
     let settingsLabelArray: [String] = ["Color", "Font"]
     let settingsColorArray: [String] = ["White", "Black"]
-    let settingsFontArray: [String] = ["AAAA", "BBBB", "CCCC"]
+    let settingsFontArray: [String] = ["Toma Slab", "Molot", "CCCC"]
 
     var selectedItem: String = ""
     
@@ -69,14 +69,22 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("タップされたよ")
         selectedItem = settingsLabelArray[indexPath.row]
+        performSegue(withIdentifier: "SettingToDetail", sender: nil)
+
     }
     
     // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("selectedItem=" + selectedItem)
+        
         if segue.identifier == "SettingToDetail" {
             let settingDetailVC = segue.destination as! SettingDetailViewController
             settingDetailVC.selectedItem = selectedItem
-            settingDetailVC.dataArray = ["White", "Black"]
+            if selectedItem == "Color" {
+                settingDetailVC.dataArray = settingsColorArray
+            } else if selectedItem == "Font" {
+                settingDetailVC.dataArray = settingsFontArray
+            }
             print(settingDetailVC.selectedItem)
         }
     }

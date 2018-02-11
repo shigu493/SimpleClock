@@ -33,7 +33,13 @@ class ClockViewController: UIViewController {
         btnSetting.titleLabel?.textColor = themeColorSub
         btnSetting.setAttributedTitle(settingIcon?.attributedString(), for: .normal)
         
-        lblTime.font = UIFont(name: "Toma Slab", size: 50)
+        var font: String = ""
+        if UserDefaults.standard.string(forKey: "Font") != nil {
+            font = UserDefaults.standard.object(forKey: "Font") as! String
+        } else {
+            font = "Toma Slab"
+        }
+        lblTime.font = UIFont(name: font, size: 50)
     }
     
     override func didReceiveMemoryWarning() {

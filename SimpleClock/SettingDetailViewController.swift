@@ -13,6 +13,7 @@ class SettingDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     var selectedItem: String = ""
     var dataArray: [String] = []
+    var beforeValue: String = ""
     
     @IBOutlet weak var tblSettingDetail: UITableView!
     override func viewDidLoad() {
@@ -22,6 +23,12 @@ class SettingDetailViewController: UIViewController, UITableViewDelegate, UITabl
 
         tblSettingDetail.delegate = self
         tblSettingDetail.dataSource = self
+        
+        if selectedItem == "Color" {
+            beforeValue = UserDefaults.standard.string(forKey: "Color")!
+        } else if selectedItem == "Font" {
+            beforeValue = UserDefaults.standard.string(forKey: "Font")!
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,9 +52,11 @@ class SettingDetailViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if selectedItem == "Color" {
-            
+            UserDefaults.standard.set(dataArray[indexPath.row], forKey: "Color")
+            UserDefaults.standard.synchronize()
         } else if selectedItem == "Font" {
-            
+            UserDefaults.standard.set(dataArray[indexPath.row], forKey: "Font")
+            UserDefaults.standard.synchronize()
         }
     }
 }
