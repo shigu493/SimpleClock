@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/01/01 Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpx-sC-Ysi">
-                                <rect key="frame" x="16" y="378.5" width="343" height="17"/>
+                                <rect key="frame" x="16" y="371.5" width="343" height="17"/>
                                 <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,8 +59,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkP-Hw-Zge" secondAttribute="trailing" constant="16" id="KoD-H4-F8g"/>
                             <constraint firstItem="Vpx-sC-Ysi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S0r-kT-EOX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heY-0K-55R" secondAttribute="trailing" constant="16" id="XZH-aV-34E"/>
-                            <constraint firstItem="Vpx-sC-Ysi" firstAttribute="top" secondItem="heY-0K-55R" secondAttribute="bottom" constant="20" id="egu-7W-70z"/>
                             <constraint firstItem="heY-0K-55R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVa-xN-4Dd"/>
+                            <constraint firstItem="Vpx-sC-Ysi" firstAttribute="top" secondItem="heY-0K-55R" secondAttribute="bottom" constant="13" id="sKh-tZ-SZd"/>
                             <constraint firstItem="heY-0K-55R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xDI-DM-3td"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

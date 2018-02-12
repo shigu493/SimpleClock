@@ -22,11 +22,14 @@ class ClockViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // タイマーをセット
+        // テーマカラーの初期化
+        ColorManager().initThemeColor()
+        
+        // 日時取得用にタイマーをセット
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(displayClock), userInfo: nil, repeats: true)
-        // 発火
         timer.fire()
         
+        // view関連
         self.view.backgroundColor = themeColor
         
         let settingIcon = FAKFontAwesome.cogIcon(withSize: 40)
@@ -53,7 +56,7 @@ class ClockViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /// 日時を表示する
+    /// 日時の表示
     @objc func displayClock() {
         // 時間
         let formatter = DateFormatter()

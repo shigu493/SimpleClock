@@ -13,6 +13,17 @@ var themeColor: UIColor = .black
 var themeColorSub: UIColor = .white
 
 class ColorManager {
+    
+    /// テーマカラーの初期化（UserDefaultsから取得）
+    func initThemeColor() {
+        if UserDefaults.standard.string(forKey: "Color") != nil {
+            setThemeColor(color: UserDefaults.standard.string(forKey: "Color")!)
+        }
+    }
+    
+    /// テーマカラーの設定
+    ///
+    /// - Parameter color: 色名
     func setThemeColor(color: String) {
         if color == "Black" {
             themeColor = .black
