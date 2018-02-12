@@ -24,12 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heY-0K-55R">
-                                <rect key="frame" x="53" y="299" width="270" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="ADO-NA-5SP"/>
-                                    <constraint firstAttribute="width" constant="270" id="yfw-XE-cKa"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:55:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heY-0K-55R">
+                                <rect key="frame" x="16.5" y="308.5" width="342.5" height="50"/>
                                 <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -48,18 +44,30 @@
                                     <segue destination="jn6-ey-RCz" kind="presentation" identifier="ClockToSettingSegue" id="kP2-Dx-02y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/01/01 Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpx-sC-Ysi">
+                                <rect key="frame" x="16" y="378.5" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kkP-Hw-Zge" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="01G-6d-Jef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vpx-sC-Ysi" secondAttribute="trailing" constant="16" id="7Nn-Dw-ic9"/>
                             <constraint firstItem="heY-0K-55R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gef-a7-J75"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkP-Hw-Zge" secondAttribute="trailing" constant="16" id="KoD-H4-F8g"/>
+                            <constraint firstItem="Vpx-sC-Ysi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S0r-kT-EOX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heY-0K-55R" secondAttribute="trailing" constant="16" id="XZH-aV-34E"/>
+                            <constraint firstItem="Vpx-sC-Ysi" firstAttribute="top" secondItem="heY-0K-55R" secondAttribute="bottom" constant="20" id="egu-7W-70z"/>
                             <constraint firstItem="heY-0K-55R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVa-xN-4Dd"/>
+                            <constraint firstItem="heY-0K-55R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xDI-DM-3td"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="btnSetting" destination="kkP-Hw-Zge" id="sfv-gv-vUJ"/>
+                        <outlet property="lblDate" destination="Vpx-sC-Ysi" id="mrd-yh-ppB"/>
                         <outlet property="lblTime" destination="heY-0K-55R" id="qGP-mw-DmV"/>
                     </connections>
                 </viewController>

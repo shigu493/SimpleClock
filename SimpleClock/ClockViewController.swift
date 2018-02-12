@@ -12,6 +12,7 @@ import FontAwesomeKit
 class ClockViewController: UIViewController {
     
     @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var btnSetting: UIButton!
     
     override func viewDidLoad() {
@@ -41,6 +42,10 @@ class ClockViewController: UIViewController {
         }
         lblTime.font = UIFont(name: font, size: 50)
         lblTime.textColor = themeColorSub
+        
+        lblDate.font = UIFont(name: font, size: 20)
+        lblDate.textColor = themeColorSub
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,22 +53,19 @@ class ClockViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /// 日時を表示する
     @objc func displayClock() {
-        // 現在時刻を「HH:MM:SS」形式で取得する
+        // 時間
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss"
-        let displayTime = formatter.string(from: Date())    // Date()だけで現在時刻を表す
-        lblTime.text = displayTime
+        lblTime.text = formatter.string(from: Date())
+        
+        // 日付
+        formatter.dateFormat = "yyyy/MM/dd"
+        lblDate.text = formatter.string(from: Date())
     }
     
     @IBAction func tapBtnSetting(_ sender: Any) {
-//        performSegue(withIdentifier: "ClockToSettingSegue", sender: nil)
-
-    }
-    
-    // MARK: - delegate
-    // 編集用モーダルからの戻り
-    func returnFromSettingVC() {
-
+        
     }
 }
