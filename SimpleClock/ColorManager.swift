@@ -17,6 +17,12 @@ class ColorManager {
         if color == "Black" {
             themeColor = .black
             themeColorSub = .white
+        } else if color == "DarkGray" {
+            themeColor = .white
+            themeColorSub = .darkGray
+        } else if color == "LightGray" {
+            themeColor = .white
+            themeColorSub = .lightGray
         } else if color == "White" {
             themeColor = .white
             themeColorSub = .black

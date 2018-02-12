@@ -40,6 +40,7 @@ class ClockViewController: UIViewController {
             font = "Toma Slab"
         }
         lblTime.font = UIFont(name: font, size: 50)
+        lblTime.textColor = themeColorSub
     }
     
     override func didReceiveMemoryWarning() {

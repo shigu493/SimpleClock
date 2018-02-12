@@ -10,6 +10,9 @@
 		3F2FEB7B19FF5193971BEBED /* Pods_SimpleClockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7344D88410AEE148C8A9D865 /* Pods_SimpleClockUITests.framework */; };
 		4C1ABD2FA738437F8E27280E /* Pods_SimpleClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4FFAFF81668ADEE8C38BE /* Pods_SimpleClock.framework */; };
 		B8676A4C0519EC4070D9B4FC /* Pods_SimpleClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757D9670033CD287B610FB5F /* Pods_SimpleClockTests.framework */; };
+		C365A16E203180EE00D42C2B /* CP_Revenge.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C365A16D203180EC00D42C2B /* CP_Revenge.ttf */; };
+		C365A170203180F800D42C2B /* ibaraji.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C365A16F203180F700D42C2B /* ibaraji.ttf */; };
+		C365A1722031810100D42C2B /* azuki.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C365A1712031810100D42C2B /* azuki.ttf */; };
 		C3A89525201DB7BA0066C387 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A89524201DB7B90066C387 /* FontAwesome.otf */; };
 		C3A895292025704F0066C387 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A895282025704F0066C387 /* Constant.swift */; };
 		C3A8952B202573410066C387 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8952A202573410066C387 /* ColorManager.swift */; };
@@ -50,6 +53,9 @@
 		705F126081C673A357A67556 /* Pods-SimpleClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClockTests/Pods-SimpleClockTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7344D88410AEE148C8A9D865 /* Pods_SimpleClockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleClockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757D9670033CD287B610FB5F /* Pods_SimpleClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleClockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C365A16D203180EC00D42C2B /* CP_Revenge.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CP_Revenge.ttf; sourceTree = "<group>"; };
+		C365A16F203180F700D42C2B /* ibaraji.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ibaraji.ttf; sourceTree = "<group>"; };
+		C365A1712031810100D42C2B /* azuki.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = azuki.ttf; sourceTree = "<group>"; };
 		C3919C5E11E95A98803DF763 /* Pods-SimpleClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleClock/Pods-SimpleClock.debug.xcconfig"; sourceTree = "<group>"; };
 		C3A89524201DB7B90066C387 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		C3A895282025704F0066C387 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -190,6 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				C3A89524201DB7B90066C387 /* FontAwesome.otf */,
+				C365A16D203180EC00D42C2B /* CP_Revenge.ttf */,
+				C365A16F203180F700D42C2B /* ibaraji.ttf */,
+				C365A1712031810100D42C2B /* azuki.ttf */,
 				C3AD8D8D201A2C080026C1B7 /* Molot.otf */,
 				C3AD8D8B201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf */,
 				C3AD8D89201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf */,
@@ -315,11 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C365A16E203180EE00D42C2B /* CP_Revenge.ttf in Resources */,
 				C3A89525201DB7BA0066C387 /* FontAwesome.otf in Resources */,
+				C365A170203180F800D42C2B /* ibaraji.ttf in Resources */,
 				C3AD8D652014CF640026C1B7 /* LaunchScreen.storyboard in Resources */,
 				C3AD8D622014CF640026C1B7 /* Assets.xcassets in Resources */,
 				C3AD8D8C201A2BFF0026C1B7 /* Qarmic_sans_Abridged.ttf in Resources */,
 				C3AD8D8E201A2C080026C1B7 /* Molot.otf in Resources */,
+				C365A1722031810100D42C2B /* azuki.ttf in Resources */,
 				C3AD8D602014CF640026C1B7 /* Main.storyboard in Resources */,
 				C3AD8D8A201A2BF40026C1B7 /* TomaSlab-ExtraLight.ttf in Resources */,
 			);

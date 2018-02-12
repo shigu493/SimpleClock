@@ -14,8 +14,8 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var btnClose: UIButton!
     @IBOutlet weak var tblSetting: UITableView!
     let settingsLabelArray: [String] = ["Color", "Font"]
-    let settingsColorArray: [String] = ["White", "Black"]
-    let settingsFontArray: [String] = ["Toma Slab", "Molot", "Qikki Reg"]
+    let settingsColorArray: [String] = ["White", "LightGray", "DarkGray", "Black"]
+    let settingsFontArray: [String] = ["Toma Slab", "Molot", "Qikki Reg", "azuki_font", "ibaraji", "CP_Revenge"]
 
     var selectedItem: String = ""
     
