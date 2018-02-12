@@ -58,11 +58,22 @@ class ClockViewController: UIViewController {
         // 時間
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss"
-        lblTime.text = formatter.string(from: Date())
+        let time = formatter.string(from: Date())
         
         // 日付
         formatter.dateFormat = "yyyy/MM/dd"
-        lblDate.text = formatter.string(from: Date())
+        var date = formatter.string(from: Date()) + " "
+        
+        // 曜日
+        var calendar = Calendar.current
+        calendar.locale = Locale(identifier: "en")
+        let weekday = calendar.component(.weekday, from: Date())
+        let weekdaySymbols = calendar.shortWeekdaySymbols
+        date += weekdaySymbols[weekday]
+    
+        // 時間、日付＋曜日をセット
+        lblTime.text = time
+        lblDate.text = date
     }
     
     @IBAction func tapBtnSetting(_ sender: Any) {
